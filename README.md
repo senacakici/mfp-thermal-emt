@@ -19,7 +19,7 @@ A lightweight, physics-based modelling tool helps researchers quickly explore st
 
 ---
 
-## 📗 2. Problem Statement  
+## 2. Problem Statement  
 MFPs exhibit complex heat-transfer behaviour due to their two-phase nature:
 
 - **Solid fibre phase** with moderate thermal conductivity  
@@ -37,7 +37,7 @@ This project addresses these questions using Effective Medium Theory.
 
 ---
 
-## 📙 3. Rationale for Using Effective Medium Theory (EMT)  
+## 3. Rationale for Using Effective Medium Theory (EMT)  
 Effective Medium Theory provides **closed-form analytical expressions** that approximate the effective thermal conductivity of heterogeneous media.
 
 EMT is appropriate because:
@@ -57,17 +57,25 @@ Additionally, a **1D layer-in-series model** is applied to incorporate polymer b
 
 ---
 
-## 📘 4. Design & Methodology  
+##  4. Design & Methodology  
 
 ### **4.1 Model Implementation**
-Core equations are implemented in `src/emt_models.py`:
+### 
+The mathematical models used in this project are implemented in `src/emt_models.py`.  
+The module includes four core functions:
 
-- `k_series(k_fibre, k_air, porosity)`
-- `k_parallel(k_fibre, k_air, porosity)`
-- `k_geometric(k_fibre, k_air, porosity)`
+- `k_series(k_fibre, k_air, porosity)`  
+- `k_parallel(k_fibre, k_air, porosity)`  
+- `k_geometric(k_fibre, k_air, porosity)`  
 - `keff_with_barrier(k_core, L_core, k_barrier, L_barrier)`
 
-These represent the dominant analytical models for porous heat conduction.
+These functions correspond to the classical analytical formulations commonly used to approximate heat conduction in porous two-phase media.  
+The first three functions (series, parallel, geometric mean) provide lower bound, upper bound, and realistic intermediate predictions of the effective thermal conductivity of fibre–air mixtures.
+
+The `keff_with_barrier` function implements a simple **1D thermal resistance model**, enabling evaluation of how a thin polymer coating layer alters the overall thermal behaviour of the MFP structure.
+
+Together, these formulations provide a lightweight but physically meaningful framework for analysing structure–property relationships in moulded fibre materials.
+
 
 ---
 
@@ -90,7 +98,7 @@ Plots illustrate:
 
 ---
 
-## 📊 5. Key Findings  
+## 5. Key Findings  
 
 ### **5.1 Porosity Dominates Thermal Behaviour**
 - Increasing porosity reduces k_eff significantly.  
@@ -107,7 +115,7 @@ The analytical models capture essential trends without computational cost.
 
 ---
 
-## 🚀 6. Future Work  
+## 6. Future Work  
 
 Potential extensions include:
 
