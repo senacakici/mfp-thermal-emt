@@ -109,6 +109,7 @@ Plots illustrate:
 - A 5–20 µm barrier changes total conductivity only slightly.  
 - At 30–50 µm, the effect becomes more noticeable but still secondary.  
 - The core fibre layer remains the dominant term due to thickness ratio.
+- A barrier-thickness plot (0–50 µm) is included in the notebook to illustrate how thin polymer layers influence the total effective thermal conductivity. As expected for coated porous fibre structures, the thermal impact is minor for very thin coatings (5–20 µm) and becomes only moderately noticeable at higher thicknesses (30–50 µm), with the fibre core remaining the dominant contributor.
 
 ### **5.3 EMT Provides Reliable First-Order Predictions**
 The analytical models capture essential trends without computational cost.
