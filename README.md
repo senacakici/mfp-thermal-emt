@@ -128,7 +128,7 @@ Potential extensions include:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 git clone https://github.com/senacakici/mfp-thermal-emt.git
