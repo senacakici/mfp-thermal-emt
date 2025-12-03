@@ -98,8 +98,7 @@ Polymer barrier conductivity ( k_poly)= 0.30 W/m·K [8]
 
 Porosity (ε) = 0.1–0.9 [9] 
 
-Barrier thickness= 5–50 µm [10] 
----
+Barrier thickness= 5–50 µm [10]
 
 ## 5.Key Result Visualizations
 
