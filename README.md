@@ -4,36 +4,28 @@ Effective Medium Theory (EMT) Modelling for the Thermal Conductivity of Porous M
 ---
 
 ## 1. Justification  
-Moulded Fibre Products (MFPs) are increasingly used as sustainable alternatives to plastics in packaging applications.  
-These materials are **porous cellulose networks**, where heat transfer is governed by a combination of fibre properties, pore structure, and thin polymer barrier coatings applied for moisture and grease resistance.
+Moulded Fibre Products (MFPs) are increasingly used as sustainable substitutes for petroleum-based plastics in packaging. Made from natural cellulose fibres, they are fully recyclable, biodegradable, and compatible with circular-economy goals [1]. Their widespread adoption in agri-food applications highlights the need to better understand their thermo-physical behaviour. 
 
-Understanding how **porosity** and **barrier layers** influence the **effective thermal conductivity** (k_eff) is essential for:
+Structurally, MFPs form high-porosity cellulose fibre networks, where heat transfer depends on three key elements: 
 
-- Packaging performance and safety  
-- Thermal resistance of food trays and serviceware  
-- Oven / heat-exposure durability  
-- Material optimisation and eco-design  
-- Barrier engineering in sustainable products  
+1. The thermal conductivity of the solid fibres, 
 
-A lightweight, physics-based modelling tool helps researchers quickly explore structure–property relationships without requiring full CFD/FEM simulations.
+2. The air-filled pore structure, and 
 
----
+3. The presence of thin barrier coatings (e.g., PLA, PVOH) applied for moisture and grease resistance [2,3]. 
+
+Because porosity strongly influences the effective thermal conductivity (k_eff), understanding the relationship between fibre network structure, coatings, and heat transfer is essential for designing packaging with appropriate thermal resistance, food-contact safety, and oven/heating performance. Lightweight analytical models—such as series/parallel bounds and Effective Medium Theory (EMT) provide fast, physics-based predictions of (k_eff), avoiding the need for complex CFD/FEM simulations [3].
 
 ## 2. Problem Statement  
-MFPs exhibit complex heat-transfer behaviour due to their two-phase nature:
+Moulded fibre materials exhibit complex heat-transfer behaviour due to their two-phase composition: 
 
-- **Solid fibre phase** with moderate thermal conductivity  
-- **Air-filled pores** with very low thermal conductivity  
+1. A moderately conductive cellulose fibre phase. 
 
-In addition, thin polymer coatings (e.g., PLA, PVOH, bio-barriers) are used as moisture/oxygen barriers, but their *thermal* impact is not well understood.
+2. A highly insulating air phase within the pores. 
 
-**Key questions:**
+The random packing of fibres creates discontinuous heat paths and makes k_eff highly sensitive to porosity: low-density (high-void) structures show lower thermal conductivity, while compaction increases heat flow by forming additional solid contact points [2,3]. 
 
-1. *How does porosity affect k_eff in a fibre–air composite?*  
-2. *How much does a thin coating layer (5–50 µm) alter the overall thermal performance?*  
-3. *Can simple analytical models approximate MFP behaviour efficiently?*
-
-This project addresses these questions using Effective Medium Theory.
+To improve liquid and grease resistance, MFPs are commonly coated with thin polymer barrier layers such as PLA or PVOH. While these coatings are essential for surface protection, their impact on thermal conductivity remains insufficiently quantified [4]. Due to their small thickness (5–50 µm), they are expected to have a modest but non-negligible effect on k_eff, particularly through pore sealing and altered surface conduction.
 
 ---
 
@@ -51,7 +43,7 @@ The project uses three classical EMT formulations:
 
 - **Series model** → lower bound  
 - **Parallel model** → upper bound  
-- **Geometric mean model** → realistic intermediate behaviour  
+- **Geometric mean model** → realistic intermediate behaviour \[5\] 
 
 Additionally, a **1D layer-in-series model** is applied to incorporate polymer barrier coatings.
 
@@ -105,16 +97,13 @@ Plots illustrate:
 ![k_eff vs Porosity](notebooks/figures/keff_vs_porosity.png)
 
 Figure: Effective thermal conductivity (k_eff) as a function of porosity (ε) for moulded fibre products.
-As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. The parallel model gives an upper bound, assuming perfect parallel conduction paths. The geometric mean EMT model predicts a realistic intermediate behaviour and is most representative of disordered porous structures. This highlights how increasing porosity reduces thermal performance, a key consideration in material design.
-
+As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. This highlights how increasing porosity reduces thermal performance, a key consideration in material design [6]. 
 ### 5.2. Barrier Thickness Effect on Thermal Conductivity
 
 ![Barrier Thickness Effect](notebooks/figures/barrier_thickness_effect.png)
 
 Figure: Effect of polymer barrier thickness on total effective thermal conductivity (k_eff) for ε = 0.7.
-The coating causes only a modest increase in k_eff, indicating that thin functional barrier layers (e.g., 10–30 µm) can be added for moisture protection with minimal impact on thermal insulation performance.
-
----
+Increasing the coating thickness enhances the effective conductivity of the fibers, thereby raising the composite’s overall keff [7]. ---
 ## 6. Future Work  
 
 Potential extensions include:
@@ -126,7 +115,22 @@ Potential extensions include:
 - **Coupling with moisture diffusion or WVTR models**  
 - **Streamlit dashboard** for interactive materials design  
 
+
 ---
+## Refences
+1. Humbert, C., Jadeau-Guichard, H., & Nicolay, P. (2024). Moulded-Pulp Packaging: A Straightforward Method for Quickly Designing, Manufacturing and Testing Complex Shapes for Crash Protection Pads. Applied Sciences, 14(24), 11516. 
+
+2. Debnath, M., Sarder, R., Pal, L., & Hubbe, M. A. (2022). Molded pulp products for sustainable packaging: production rate challenges and product opportunities. BioResources, 17(2), 3810. 
+
+3. Liu, K., & Wang, Y. Pore Structure Characterization and Effective Thermal Conductivity Calculation Model of Fibrous Building Thermal Insulation Materials Based on X-Ray Tomography. Available at SSRN 4712349. 
+
+4. Tarnowiecka-Kuca, A., Peeters, R., Bamps, B., Stobińska, M., Kamola, P., Wierzchowski, A., ... & Mizielińska, M. (2023). Paper coatings based on polyvinyl alcohol and cellulose nanocrystals using various coating techniques and determination of their barrier properties. Coatings, 13(11), 1975. 
+
+5. Wang, W., Fu, Q., Ge, J., Xu, S., Liu, Q., Zhang, J., & Shan, H. (2024). Advancements in thermal insulation through ceramic micro-nanofiber materials. Molecules, 29(10), 2279. 
+
+6. Sekino, N. (2016). Density dependence in the thermal conductivity of cellulose fiber mats and wood shavings mats: investigation of the apparent thermal conductivity of coarse pores. Journal of wood science, 62(1), 20-26. 
+
+7. Benveniste, Y., & Miloh, T. (1991). On the effective thermal conductivity of coated short‐fiber composites. Journal of Applied Physics, 69(3), 1337-1344. 
 
 ## How to Run
 
