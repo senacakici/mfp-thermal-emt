@@ -98,24 +98,23 @@ Plots illustrate:
 
 ---
 
-## 5. Key Findings  
+## 5.Key Result Visualizations
 
-### **5.1 Porosity Dominates Thermal Behaviour**
-- Increasing porosity reduces k_eff significantly.  
-- Differences between series/parallel bounds enlarge with porosity.  
-- Geometric mean model tracks realistic behaviour between bounds.
+  ### 5.1. k_eff vs Porosity
 
-### **5.2 Thin Polymer Coatings Have Moderate Influence**
-- A 5–20 µm barrier changes total conductivity only slightly.  
-- At 30–50 µm, the effect becomes more noticeable but still secondary.  
-- The core fibre layer remains the dominant term due to thickness ratio.
-- A barrier-thickness plot (0–50 µm) is included in the notebook to illustrate how thin polymer layers influence the total effective thermal conductivity. As expected for coated porous fibre structures, the thermal impact is minor for very thin coatings (5–20 µm) and becomes only moderately noticeable at higher thicknesses (30–50 µm), with the fibre core remaining the dominant contributor.
+k_eff vs Porosity](notebooks/figures/keff_vs_porosity.png)
 
-### **5.3 EMT Provides Reliable First-Order Predictions**
-The analytical models capture essential trends without computational cost.
+Figure: Effective thermal conductivity (k_eff) as a function of porosity (ε) for moulded fibre products.
+As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. The parallel model gives an upper bound, assuming perfect parallel conduction paths. The geometric mean EMT model predicts a realistic intermediate behaviour and is most representative of disordered porous structures. This highlights how increasing porosity reduces thermal performance, a key consideration in material design.
+
+### 5.2. Barrier Thickness Effect on Thermal Conductivity
+
+Barrier Thickness](notebooks/figures/barrier_thickness_effect.png)
+
+Figure: Effect of polymer barrier thickness on total effective thermal conductivity (k_eff) for ε = 0.7.
+The coating causes only a modest increase in k_eff, indicating that thin functional barrier layers (e.g., 10–30 µm) can be added for moisture protection with minimal impact on thermal insulation performance.
 
 ---
-
 ## 6. Future Work  
 
 Potential extensions include:
