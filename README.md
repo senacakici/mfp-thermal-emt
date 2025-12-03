@@ -108,13 +108,13 @@ Barrier thickness= 5–50 µm [10]
 ![k_eff vs Porosity](notebooks/figures/keff_vs_porosity.png)
 
 Figure: Effective thermal conductivity (k_eff) as a function of porosity (ε) for moulded fibre products.
-As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. This highlights how increasing porosity reduces thermal performance, a key consideration in material design [6]. 
+As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. This highlights how increasing porosity reduces thermal performance, a key consideration in material design [11]. 
 ### 5.2. Barrier Thickness Effect on Thermal Conductivity
 
 ![Barrier Thickness Effect](notebooks/figures/barrier_thickness_effect.png)
 
 Figure: Effect of polymer barrier thickness on total effective thermal conductivity (k_eff) for ε = 0.7.
-Increasing the coating thickness enhances the effective conductivity of the fibers, thereby raising the composite’s overall keff [7]. ---
+Increasing the coating thickness enhances the effective conductivity of the fibers, thereby raising the composite’s overall keff [12].
 ## 6. Future Work  
 
 Potential extensions include:
