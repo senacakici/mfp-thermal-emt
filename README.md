@@ -88,6 +88,17 @@ Plots illustrate:
 - Sensitivity of thermal conductivity to porosity  
 - Thermal impact of surface barrier engineering  
 
+### 4.4 Assumptions and Reference Values 
+
+Fibre thermal conductivity (k_fibre) = 0.20 W/m·K [6] 
+
+Air thermal conductivity (k_air) = 0.026 W/m·K [7] 
+
+Polymer barrier conductivity ( k_poly)= 0.30 W/m·K [8] 
+
+Porosity (ε) = 0.1–0.9 [9] 
+
+Barrier thickness= 5–50 µm [10] 
 ---
 
 ## 5.Key Result Visualizations
@@ -128,9 +139,19 @@ Potential extensions include:
 
 5. Wang, W., Fu, Q., Ge, J., Xu, S., Liu, Q., Zhang, J., & Shan, H. (2024). Advancements in thermal insulation through ceramic micro-nanofiber materials. Molecules, 29(10), 2279. 
 
-6. Sekino, N. (2016). Density dependence in the thermal conductivity of cellulose fiber mats and wood shavings mats: investigation of the apparent thermal conductivity of coarse pores. Journal of wood science, 62(1), 20-26. 
+6. Glass, S., & Zelinka, S. (2021). Moisture relations and physical properties of wood. Chapter 4 in FPL-GTR-282, 4-1. 
 
-7. Benveniste, Y., & Miloh, T. (1991). On the effective thermal conductivity of coated short‐fiber composites. Journal of Applied Physics, 69(3), 1337-1344. 
+7. Perumal, S., Rajendrian, S., Venkatraman, V., Sundaresan, D., & Pandiyan, L. (2020). Experimental study about thermal resistance of windows with air gap between two glasses used in single houses. Thermal Science, 24(1 Part B), 515-518. 
+
+8. Wei, Q., & Yang, D. (2023). A self-healing polyvinyl alcohol-based composite with high thermal conductivity and excellent mechanical properties. Composites Communications, 39, 101561. 
+
+9. Semple, K. E., Zhou, C., Rojas, O. J., Nkeuwa, W. N., & Dai, C. (2022). Moulded pulp fibers for disposable food packaging: A state-of-the-art review. Food Packaging and Shelf Life, 33, 100908. 
+
+10.      Apicella, A., Barbato, A., Garofalo, E., Incarnato, L., & Scarfato, P. (2022). Effect of PVOH/PLA+ wax coatings on physical and functional properties of biodegradable food packaging films. Polymers, 14(5), 935. 
+
+11.      Sekino, N. (2016). Density dependence in the thermal conductivity of cellulose fiber mats and wood shavings mats: investigation of the apparent thermal conductivity of coarse pores. Journal of wood science, 62(1), 20-26. 
+
+12.      Benveniste, Y., & Miloh, T. (1991). On the effective thermal conductivity of coated short‐fiber composites. Journal of Applied Physics, 69(3), 1337-1344. 
 
 ## How to Run
 
