@@ -102,14 +102,14 @@ Plots illustrate:
 
   ### 5.1. k_eff vs Porosity
 
-k_eff vs Porosity](notebooks/figures/keff_vs_porosity.png)
+![k_eff vs Porosity](notebooks/figures/keff_vs_porosity.png)
 
 Figure: Effective thermal conductivity (k_eff) as a function of porosity (ε) for moulded fibre products.
 As porosity increases, k_eff decreases significantly across all models. The series model provides a lower bound, assuming heat flows only through air or fibre in sequence. The parallel model gives an upper bound, assuming perfect parallel conduction paths. The geometric mean EMT model predicts a realistic intermediate behaviour and is most representative of disordered porous structures. This highlights how increasing porosity reduces thermal performance, a key consideration in material design.
 
 ### 5.2. Barrier Thickness Effect on Thermal Conductivity
 
-Barrier Thickness](notebooks/figures/barrier_thickness_effect.png)
+![Barrier Thickness Effect](notebooks/figures/barrier_thickness_effect.png)
 
 Figure: Effect of polymer barrier thickness on total effective thermal conductivity (k_eff) for ε = 0.7.
 The coating causes only a modest increase in k_eff, indicating that thin functional barrier layers (e.g., 10–30 µm) can be added for moisture protection with minimal impact on thermal insulation performance.
