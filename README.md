@@ -147,11 +147,11 @@ Potential extensions include:
 
 9. Semple, K. E., Zhou, C., Rojas, O. J., Nkeuwa, W. N., & Dai, C. (2022). Moulded pulp fibers for disposable food packaging: A state-of-the-art review. Food Packaging and Shelf Life, 33, 100908. 
 
-10.      Apicella, A., Barbato, A., Garofalo, E., Incarnato, L., & Scarfato, P. (2022). Effect of PVOH/PLA+ wax coatings on physical and functional properties of biodegradable food packaging films. Polymers, 14(5), 935. 
+ 10.Apicella, A., Barbato, A., Garofalo, E., Incarnato, L., & Scarfato, P. (2022). Effect of PVOH/PLA+ wax coatings on physical and functional properties of biodegradable food packaging films. Polymers, 14(5), 935. 
 
-11.      Sekino, N. (2016). Density dependence in the thermal conductivity of cellulose fiber mats and wood shavings mats: investigation of the apparent thermal conductivity of coarse pores. Journal of wood science, 62(1), 20-26. 
+11.    Sekino, N. (2016). Density dependence in the thermal conductivity of cellulose fiber mats and wood shavings mats: investigation of the apparent thermal conductivity of coarse pores. Journal of wood science, 62(1), 20-26. 
 
-12.      Benveniste, Y., & Miloh, T. (1991). On the effective thermal conductivity of coated short‐fiber composites. Journal of Applied Physics, 69(3), 1337-1344. 
+12.    Benveniste, Y., & Miloh, T. (1991). On the effective thermal conductivity of coated short‐fiber composites. Journal of Applied Physics, 69(3), 1337-1344. 
 
 ## How to Run
 
